@@ -1,5 +1,118 @@
 * {
-    margin:0px;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 0px;
+}
+
+body {
+    background-color: #181818;
+    padding: 0px 50px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection {
+    background-color: #61ce70;
+    color: #0f0f0f;
+}
+
+h1, h2 {
+    font-size: 37px;
+    font-weight: 800;
+    padding-bottom: 50px;
+}
+
+h3 {
+    margin: 20px 0px 20px 0px;
+    font-weight: 800;
+    font-size: 27px;
+}
+
+h4 {
+    margin: 20px 0px 20px 0px;
+    font-size: 30px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #61ce70;
+    font-family: "Montserrat", sans-serif;
+}
+
+a::selection {
+    background-color: #61ce70;
+    color: #0f0f0f;
+}
+
+li {
+    color: #61ce70;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 0px 20px 0px 20px;
+    list-style: none;
+}
+
+li::selection {
+    background-color: #61ce70;
+    color: #0f0f0f;
+}
+
+html .boton::selection {
+    background-color: #61ce70;
+    color: #0f0f0f;
+}
+
+/*boton general*/
+
+.boton-portada {
+    margin-top: 50px;
+}
+
+.link-boton {
+    padding: 10px 20px 10px 20px;
+    color: #61ce70;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    border: #61ce70 solid 2px;
+    background-color: #00000000;
+    box-shadow: 2px 2px 20px rgba(43, 43, 43, 0.685);
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+.link-boton:hover {
+    padding: 10px 20px 10px 20px;
+    color: #61ce70;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    border: #FFFF solid 2px;
+    background-color: #00000000;
+    box-shadow: 2px 2px 20px rgba(43, 43, 43, 0.685);
+}
+
+/*fin boton general*/
