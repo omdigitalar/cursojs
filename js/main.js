@@ -1,4 +1,4 @@
-alert("Hola, vamos a calcular el valor del envío de tu pedido de Cyberwax.")
+alert("Hola, vamos a calcular el valor del envío de tu pedido de Cyberwax.") //Mensaje de bienvenida.
 
 const calcularEnvio = () =>{
     let valorPedido; //creamos la variable valor Pedido.
@@ -31,7 +31,7 @@ const precioSegunValor = () =>{
     }
     //Usamos la función de orden superior "find" para encontrar dentro de el array valor Envíos, el precio que esté relacionado al peso del pedido insertado por el cliente.
     const encontrado = valorEnvios.find(item => item.peso >= pesoPedido);
-    alert("El valor a abonar es de $" + encontrado.precio + ".");
+    alert("El valor a abonar es de $" + encontrado.precio + ", para paquetes de hasta " + encontrado.peso + "kg.");
     }
 
 // Creamos el array valorEnvios, con los distintos valores segun el peso en kg del paquete.
