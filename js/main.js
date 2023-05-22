@@ -17,7 +17,6 @@ const calcularEnvio = () =>{
 calcularEnvio();
 
 
-
 const precioSegunValor = () =>{
     let pesoPedido = prompt("Ingrese por favor el peso en kg de su paquete");
     const encontrado = valorEnvios.find(item => item.peso >= pesoPedido);
@@ -26,11 +25,11 @@ const precioSegunValor = () =>{
 };
 
 const valorEnvios = [
-    { peso: 1, precio: 1000 },
-    { peso: 2, precio: 1300 },
-    { peso: 5, precio: 1500 },
-    { peso: 10, precio: 2500 },
-    { peso: 20, precio: 3500 }, 
+    { peso: 1, precio: 1000, dimensiones: 90 },
+    { peso: 2, precio: 1300, dimensiones: 90 },
+    { peso: 5, precio: 1500, dimensiones: 110 },
+    { peso: 10, precio: 2500, dimensiones: 130 },
+    { peso: 20, precio: 3500, dimensiones: 170 }, 
 ];
 
 precioSegunValor();
