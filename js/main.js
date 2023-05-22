@@ -11,18 +11,37 @@ const calcularEnvio = () =>{
             alert("¡Felicitaciones! Tienes envío gratis.");
             }else {return alert('Deberás abonar tu envīo. Vamos a calcular el precio en base al peso del paquete.')}
             }
-    }while (valorPedido != NaN)
+    // }while (valorPedido != NaN)
+    }while (!parseInt(valorPedido))
 
 }
 calcularEnvio();
 
-
 const precioSegunValor = () =>{
-    let pesoPedido = prompt("Ingrese por favor el peso en kg de su paquete");
+    let pesoPedido;
+    do{ 
+        pesoPedido = parseInt(prompt("Ingrese por favor el peso en kg de su paquete"));
+        if (!parseInt(pesoPedido)) {
+        alert("Inserte un peso válido");
+    }
+    }
+    while (!parseInt(pesoPedido)) {
+    }
     const encontrado = valorEnvios.find(item => item.peso >= pesoPedido);
     alert("El valor a abonar es de $" + encontrado.precio + ".");
-    alert("Gracias por comprar en Cyberwax.");
-};
+    }
+
+
+
+// const precioSegunValor = () =>{
+//     let = pesoPedido = prompt("Ingrese por favor el peso en kg de su paquete");
+//     while (!parseInt(pesoPedido)) {
+//         alert("Inserte un peso válido");
+//     }
+//     const encontrado = valorEnvios.find(item => item.peso >= pesoPedido);
+//     alert("El valor a abonar es de $" + encontrado.precio + ".");
+//     }
+
 
 const valorEnvios = [
     { peso: 1, precio: 1000, dimensiones: 90 },
@@ -33,6 +52,8 @@ const valorEnvios = [
 ];
 
 precioSegunValor();
+
+alert("Gracias por comprar en Cyberwax.");
 
 
 
