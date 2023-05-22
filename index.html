@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,19 +14,25 @@
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header>
         <a href=""><img src="" alt=""></a>
     </header>
     <main>
         <h1>Calculá el valor del envío de tus discos</h1>
-        <p>Este simulador calcula el valor de tu envío según las dimensiones, peso y monto del pedido. En caso de que el pedido supere los $20.000.- el envio será <b>gratis</b>. Por el momento hay una tarifa plana de $2000, para todos los envíos, pero la intensión de este simulador es que varíe segun las caracteristicas del envío (peso, dimensiones, codigo postal y tipo de envio -domicilio o sucursal.</p>
-        <p>Se utilizó un condicional, con if y else, para indicar el valor del envio, o envio gratis, segun el monto introducido por el usuario. Además con do while se colocó un bucle indicando que el valor indicado no es valido, cada vez que no se coloque un parseInt en el prompt, y vuelva a solicitar el valor del envío. Una vez que el numero colocado es un parseInt, a través de return el alert devuelve valor de envio, o envio gratis. </p>
-        <p>Todo esto está dentro de una función llamada <b>"calcularEnvio"</b></p>
+        <p>Este simulador calcula el valor de tu envío según las dimensiones, peso y monto del pedido. En caso de que el
+            pedido supere los $15.000.- el envio será <b>gratis</b>. El envīo se calcula segun el peso del paquete.</p>
+        <p>Se utilizó un condicional, con if y else, para indicar el valor del envio, o envio gratis, segun el monto
+            introducido por el usuario. Además con do while se colocó un bucle indicando que el valor indicado no es
+            valido, cada vez que no se coloque un parseInt en el prompt, y vuelva a solicitar el valor del envío. Una
+            vez que el numero colocado es un parseInt, a través de return brinda un alert indicando que tiene que abonar envío y pasa a la segunda función</p>
+        <p>A la función inicial de <b>"calcularEnvio"</b>, se le agregó una nueva función que interactua con un array con los valores segun peso del pedido, llamada <b>precioSegunValor()</b></p>
         <div class="boton-portada">
             <a class="link-boton" href="https://cyberwax.com.ar">Volvé a la tienda</a>
         </div>
     </main>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
